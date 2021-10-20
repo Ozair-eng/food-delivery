@@ -1,0 +1,183 @@
+/* Navbar */
+#navbar{
+    flex-direction: column;
+    
+}
+#navbar ul li a{
+    font-size:4vw;
+    padding: 8px 8px;
+}
+
+/* home section */
+
+#home{
+    height:380px;
+    padding: 0px 20px;
+}
+#home::before{
+    height:480px;
+}
+#home p{
+    font-size:3.4vw;
+}
+
+
+/* services section */
+
+#services{
+    flex-direction: column;
+    margin :1px;
+}
+#services .box{
+    padding:30px;
+}
+#services .box img{
+    height:100px;
+}
+#services .box p {
+    font-size: 2.5vh;
+    padding: 20px;
+}
+
+/* clients section */
+#clients{
+    flex-direction: column;
+}
+.client-item {
+    padding: 40px 10px;
+   
+}
+.client-item img{
+    height: 54px;
+}
+@media screen and (max-width:280px){
+    .client-item img{
+        height: 45px;
+    }
+}
+
+
+/* contact us section */
+#container{
+    margin: 25px 12px;
+    width: 70%;
+
+}
+
+.form-group input{
+    
+}
+
+/* utility classes */
+.h1-primary{
+margin: 0px 5px;
+}
+.h1-third{
+    font-size:5vw;
+}
+.h1-secondary{
+    padding-top: 20px;
+    font-size: 9vw;
+}
+
+/* phone responsive sizes */
+/* display css for iphone 5s */
+
+/* @media screen and (max-width:320px){
+    .home::before {
+        width: 113%;
+    }
+    .navbar{
+        flex-direction: column;
+        width:113%;
+    }
+    .h1-primary{
+        margin-left: 40px;
+    }
+}
+
+
+@media screen and (max-width:370px){
+    .navbar{
+        width:111%;
+    }
+    
+    .home::before {
+        width: 111%;
+    }
+    .home p{
+        font-size:3.5vw;
+    }
+    .h1-third , .home p{
+        margin-left:39px
+    }
+    .h1-primary{
+        margin-left: 43px;
+    }
+    .home{
+        padding: 0px 0px;
+        width:106%;
+    }
+    .client-item img {
+        height: 53px;
+        margin-left: 43px;
+    }
+}
+
+
+@media screen and (max-width: 790px){
+    .home{
+        padding: 0px 0px;
+        width:101%;
+    }
+    
+    .services .box p{
+        font-size:4vw;
+        margin: 10px 13px;
+    }
+    .h1-secondary{
+        font-size:6vw;
+    }
+    .h1-third{
+        font-size:6vw;
+    }
+    .navbar{
+        flex-direction: column;
+        width:104%;
+    }
+    .navbar ul li a{
+        padding:8px 15px;
+        font-size:5vw;
+    }
+}
+
+@media screen and (max-width: 995px){
+    .navbar ul {
+        display: flex;
+        margin-left: 0%;
+    }
+    
+    .home::before{
+        width:104%;
+    }
+    .home{
+        padding: 0px 0px;
+    }
+    .home p{
+        font-size:3vw;
+    }
+    
+    .h1-primary{
+        margin: 0px 0px;
+    }
+    .clients{
+        flex-direction: column;
+    }
+    .client-item img{
+        height:53px;
+    }
+    .client-item {
+        padding: 24px 35px;
+    }
+
+} */

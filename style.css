@@ -1,0 +1,290 @@
+/* font-family */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* all css */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(221 222 223);
+   
+}
+/* logo css here */
+.logo{
+    margin:20px 34px;
+}
+.logo img{
+    height: 56px;
+    width: 8px 4px;
+    transition: all 0.4s ease-in-out;
+}
+.logo img:hover{
+    filter: invert(1);
+    transform: scale(1.5);
+}
+
+
+/* navbar css starts here */
+#navbar{
+    position: relative;
+    top: 0px;
+    align-items: center;
+    display: flex;
+    align-items:center;
+    position:sticky;
+
+}
+#navbar ul{
+    display:flex;
+    margin-left: 2%;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:100%; 
+    width: 100%;
+    z-index: -1;
+    opacity:0.4;
+}
+
+#navbar ul li {
+    list-style:none;
+    font-size:1.3rem;
+}
+#navbar ul li a {
+    text-decoration:none;
+    display:block;
+    padding:8px 32px;
+    color:black;
+    border-radius: 10px;
+    transition:all 0.3s ease-in-out;
+    font-family: 'Lobster', cursive;
+    font-size:33px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:rgba(139, 138, 138, 0.733);
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
+/* home scss starts here */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 0px 37px;
+    height: 563px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background: url("images/pexels-robert-bogdan-676560.jpg") no-repeat center center/cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:650px;
+    width: 101%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+
+
+#home p{
+    text-align: center;
+    margin:6px;
+    font-size:1.9rem;
+    color: rgb(36, 37, 37);
+    font-family: 'Bebas Neue', cursive;
+}
+/* utility classes */
+.h1-third{
+    font-size:3rem;
+    padding: 11px;
+    /* margin: 0 723px; */
+    transition: all 0.3s ease-in-out;
+    color: rgb(42, 43, 43);
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing:2px;
+}
+
+.h1-third:hover{
+    transform: scale(1.2);
+}
+.h1-primary{
+    font-size:3rem;
+    padding: 11px;
+    margin: 0px 300px;
+    transition: all 0.3s ease-in-out;
+    color: rgb(42, 43, 43);
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing:2px;
+}
+
+.h1-primary:hover{
+    transform: scale(1.2);
+}
+
+.h1-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    letter-spacing:2px;
+    padding: 12px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding:6px 22px;
+    border:2px solid black;
+    background-color:inherit;
+    border-radius:0 10px 0 10px;
+    margin: 19px;
+    font-size:1.3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    letter-spacing:2px;
+    transition:all 0.4s ease-in-out;
+    opacity: 0.69;
+    background-color:black;
+    color: white;
+    cursor:pointer;
+}
+.btn:hover{
+    transform: scale(1.2);
+    border-radius:10px 0 10px 0;
+}
+/* services sectio starts here */
+#services{
+    margin:34px;
+    display:flex;
+
+}
+#services .box{
+    /* border: 3px solid black; */
+    padding: 60px;
+    margin: 13px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(63, 62, 62, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 100px;
+    background-color: rgb(240, 240, 240);
+}
+#services .box img{
+    height: 180px;
+    margin:auto;
+    display:block;
+    transition: all 0.4s;
+    cursor:pointer;
+}
+#services .box img:hover{
+    transform: scale(1.2);
+}
+#services .box p{
+    margin: 10px 19px;
+    padding: 2px;
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive;
+
+}
+/* clintes section starts here */
+.client-section{
+    position: relative;
+    margin-top:25px;
+    margin-bottom:60px;
+}
+#clients{
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+}
+.client-item{
+    padding: 10px 35px;
+}
+.client-item img{
+    height:63px;
+    transition: all 0.4s;
+    cursor:pointer;
+}
+.client-item img:hover{
+    transform: scale(1.2);
+}
+/* form css here */
+#container{
+    align-items: center;
+    margin: 25px 25%;
+    padding: 30px;
+    font-family: 'Bebas Neue', cursive;
+    /* border: 3px solid rgb(49, 48, 48); */
+    display: inline-block;
+    width: 44%;
+    border-radius: 15px;
+    font-size:30px;
+}
+.form-group input{
+    padding: 10px;
+    margin: 8px 10%;
+    text-align: center;
+    width: 80%;
+    font-size: 30px;
+    background: inherit;
+    border:4px solid rgb(0, 0, 0);
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 33px;
+    color:rgb(2, 2, 2);
+    letter-spacing:2px;
+    box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.2), 0 6px 20px 0 rgba(10, 9, 9, 0.19);
+}
+.container h1{
+    color: rgb(12, 12, 12);
+    text-align: center;
+    letter-spacing:3px
+
+}
+::placeholder{
+color: rgb(5, 5, 5);
+  opacity: 1;
+}
+input:focus::placeholder {
+    color: transparent;
+  }
+  .btn-primary{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        padding:6px 22px;
+        border:2px solid black;
+        background-color:inherit;
+        border-radius:0 10px 0 10px;
+        margin: 20px auto;
+        font-size:1.3rem;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: bold;
+        letter-spacing:2px;
+        transition:all 0.4s ease-in-out;
+        opacity: 0.69;
+        background-color:black;
+        color: white;
+        cursor:pointer;
+  }
+    .btn-primary:hover{
+        transform: scale(1.2);
+        border-radius:10px 0 10px 0;
+    }
