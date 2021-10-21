@@ -1,7 +1,10 @@
 /* Navbar */
 #navbar{
-    flex-direction: column;
+    flex-direction: row;
     
+}
+.logo img{
+    height: 37px;
 }
 #navbar ul li a{
     font-size:4vw;
@@ -11,7 +14,7 @@
 /* home section */
 
 #home{
-    height:380px;
+    height:495px;
     padding: 0px 20px;
 }
 #home::before{
