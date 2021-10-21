@@ -64,7 +64,7 @@ body{
     text-decoration:none;
     display:block;
     padding:8px 32px;
-    color:black;
+    color:rgb(221, 220, 220);
     border-radius: 10px;
     transition:all 0.3s ease-in-out;
     font-family: 'Lobster', cursive;

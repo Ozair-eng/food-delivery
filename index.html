@@ -8,6 +8,18 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" media="screen and (max-width: 1320px)" href="phone.css">
+<script>
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 <body>
     <!-- navbar starts here -->
     <nav id="navbar">
@@ -98,16 +110,4 @@
     </div>
 </section>
 </body>
-<script>
-    var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
 </html>
